@@ -1,0 +1,61 @@
+.main-footer{
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;  
+    }
+    .footer-container{
+        background-color: black;
+    }
+    .row{
+        display: flex;
+        gap: 15rem;
+        margin-left: 160px;
+        
+    
+    }
+    .col h4{
+        color: orangered;
+    }
+    .col span{
+        color: grey;
+    }
+    .rowx{
+        margin-left: 10rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        
+        
+        
+        
+    }
+    .logo1{
+        width: 150px;
+        height:40px;
+        padding-left: 150px;
+        padding-right: 160px;
+        margin-top: 5px;
+        object-fit: cover;
+    }
+    .rowx p{
+        margin-left: 140px;
+        
+    }
+    .facebook {
+        width: 25px;
+        height: 25px;
+        margin-right: 14px;
+        
+    }
+    .instagram{
+        width: 23px;
+        height: 23px;
+    
+    }
+    .social-media{
+        margin-top: 10px;
+    }
+        
+    
+    

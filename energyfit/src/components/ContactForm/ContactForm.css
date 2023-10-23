@@ -1,0 +1,98 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+  
+*{
+  color: white;
+}
+.ContactForm-container{
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/contactTest.jpeg');
+    background-position: calc(100%-150px)center;
+}
+
+.form-container {
+    position: absolute;
+    max-width: 400px;
+    padding: 40px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 180px;
+    
+
+  }
+
+.text-form h2{
+  position: absolute;
+  font-size: 80px;
+  color: orangered;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 80px;
+}
+  .text-form h2{
+      font-family: 'Alumni Sans Collegiate One';
+      background: linear-gradient(to right, orangered, GOLD); /* Utilisez vos deux couleurs ici */
+      -webkit-background-clip: text;
+      color: transparent;
+      font-style: italic;
+      font-size: 70px;
+      margin-bottom: 35px;
+      text-decoration: underline;
+    }
+    
+
+  
+  /* Style des champs de saisie */
+  .form-input {
+    width: 90%;
+    padding: 9px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid orangered;
+    background-color: transparent;
+  }
+  .form-input input{
+    color: beige;
+  }
+  
+ form>::placeholder{
+  color: antiquewhite;
+ }
+  
+  
+  .form-input:focus{
+    border: none;
+    border-bottom: 1px solid #ccc;
+
+  }
+  
+  /* Style du bouton de soumission */
+  .submit-button {
+    background-color: orangered;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: chartreuse;
+  }
+   .d1 hr{
+    position: absolute;
+    width:63%;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin-bottom: -60px;
+    bottom: 9.5%;
+    margin-left: 30px;
+    
+  }
+
+  

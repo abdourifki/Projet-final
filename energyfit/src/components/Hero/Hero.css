@@ -1,0 +1,150 @@
+
+
+.text-animation {
+    animation: moveLeftToRight 1s forwards;
+    display: inline-block;
+  }
+  
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+    background-image: url('../../assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+.left-h{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hero-text1{
+    margin-left: 2rem;
+}
+.hero-text2{
+    margin-left: 2rem;
+}
+.hero-text3{
+    margin-left: 2rem;
+    
+}
+.hero-text3 span{
+    letter-spacing: 2px;
+    font-size: 15px;
+    line-height: 40px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+.hero-text>div:nth-of-type(3){
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+.figures{
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+.figures>div>span:nth-of-type(1){
+    color: white;
+    font-size: 2rem;
+}
+.figures>div>span:nth-of-type(2){
+    color: grey;
+    text-transform: uppercase;
+}
+.hero-button{
+    display: flex;
+    gap:1rem;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.hero-button button{
+    padding: 10px 20px;
+    background-color: #ff5500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    
+    
+    
+
+    
+}
+.hero-button a{
+    text-decoration: none;
+}
+
+
+.hero-button>:active{
+    box-shadow: 0 4px 8px rgba(255, 94, 0, 0.7);
+}
+.hero-button button:hover{
+    background-color:chartreuse;
+}
+
+.heroPic{
+    position: absolute;
+    right: 100px;
+    top: 6rem;
+    width: 45rem;
+    left: 40rem;
+}
+.calories{
+    display: flex;
+    gap: 2rem;
+    background-color:transparent;
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 35rem;
+    right: 22rem;
+
+}
+.calories>img{
+    width: 3rem;
+}
+.calories>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calories>div:nth-child(1){
+    color: orange;
+}
+.calories>div:nth-child(2){
+    color:white;
+}
+.hero-blur{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+    
+}
