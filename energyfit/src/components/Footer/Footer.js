@@ -13,10 +13,10 @@ const Footer = () => {
           <div className="col">
             <h4>Energy Club</h4>
             <span>
-              Leader de la remise en forme au Maroc.
-              <br /> les meilleurs coachs à votre écoute inégalé. <br />
+            Leader in fitness in Morocco.
+              <br /> the best coaches at your service, unrivaled. <br />
               <br />
-              Contactez-nous : <span style={{ color: "green" }}> 05 22 64 70 30</span>
+              Contactez-nous : <span style={{ color: "green" , fontWeight:"bold"}}> 06 61 11 01 22</span>
             </span>
           </div>
           {/* column2 */}
@@ -24,7 +24,7 @@ const Footer = () => {
             <h4>Services</h4>
             <span>
               Clubs
-              <br /> Activités
+              <br /> Activities
               <br /> Coaching
             </span>
           </div>

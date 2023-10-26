@@ -10,6 +10,8 @@ function ContactForm() {
     Message: "",
   });
 
+  const [messageSent, setMessageSent] = useState(false)
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -19,7 +21,7 @@ function ContactForm() {
     e.preventDefault();
     try {
       await axios.post("http://localhost:3001/api/contact", formData);
-      alert("Contact form submitted successfully");
+      // alert("Contact form submitted successfully");
       setFormData({
         Prenom: "",
         Nom: "",
@@ -28,8 +30,9 @@ function ContactForm() {
       });
     } catch (error) {
       console.error("Error:", error);
-      alert("Error submitting contact form");
+      // alert("Error submitting contact form");
     }
+    setMessageSent(true);
   };
 
   return (
@@ -74,9 +77,15 @@ function ContactForm() {
             className="form-input"
             required
           />
-          <button type="submit" className="submit-button">
-            Envoyer
-          </button>
+            <button type="submit" className="submit-button">
+              Envoyer
+            </button>
+            {messageSent ?
+              (<p className="messageSent">Message Sent Succefully !</p>) : (
+                <p></p>
+              )
+            }
+
         </form>
       </div> 
       <div className="d1">

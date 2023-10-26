@@ -2,9 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 
   
-*{
-  color: white;
-}
+
 .ContactForm-container{
     height: 100vh;
     position: relative;
@@ -54,18 +52,20 @@
     border: none;
     border-bottom: 1px solid orangered;
     background-color: transparent;
+    color: white;
   }
   .form-input input{
     color: beige;
   }
   
  form>::placeholder{
-  color: antiquewhite;
+  color: white;
  }
   
   
   .form-input:focus{
-    border: none;
+    border: transparent;
+    color: white;
     border-bottom: 1px solid #ccc;
 
   }
@@ -79,6 +79,7 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    display: inline-block;
   }
   
   .submit-button:hover {
@@ -95,4 +96,8 @@
     
   }
 
-  
+  .messageSent {
+    color: green;
+    font-size: 20px;
+    font-family: "Poppins";
+  }
