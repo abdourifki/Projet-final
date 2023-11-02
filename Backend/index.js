@@ -36,6 +36,6 @@ app.get('/user', async(req, res) =>{
     }
 })
 
-app.listen(3001, ()=>{
-    console.log('The app is listening to the port: http://localhost:3001');
+app.listen(3007, ()=>{
+    console.log('The app is listening to the port: http://localhost:3007');
 }) 

@@ -17,11 +17,12 @@
 
 
 .reasons{
-    margin-top: 50px;
+    margin-top: -5px;
     padding: 0 2rem;
     display: flex;
     gap: 2rem;
     background-color: black;
+    padding-top: 170px;
     
 }
 .left-r{

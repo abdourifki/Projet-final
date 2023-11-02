@@ -5,26 +5,30 @@ import NumberCounter from "./NumberCounter";
 import { motion } from "framer-motion";
 import HomeNavbar from '../Navbar/Homenavbar';
 import { useState } from "react";
+import { useEffect } from "react";
+import aos from 'aos';
+import "aos/dist/aos.css";
+
+
 
 const Hero = () => {
+  useEffect(()=>{
+    aos.init({duration:1000,
+      once: true,
+      easing:"ease-in-out",
+      offset:100,
+    })
+  },[]);
   const transition = { type: "spring", duration: 3 };
   const [selected, setSelected] = useState(0);
   return (
-  <>
+  <div className="test">
         <HomeNavbar />
 
-    <div className="hero">
+    <div className="hero" data-aos="flip-left">
       <div className="blur hero-blur"></div>
       <div className="left-h">
-        {/*the best ad*/}
-        {/* <div className="the-best-ad">
-          <motion.div
-            initial={{ left: "238px" }}
-            whileInView={{ left: "8px" }}
-            transition={transition}
-            ></motion.div>
-          <span>the best fitness club in the town</span>
-        </div> */}
+        
         {/*hero heading*/}
         <div className="hero-text">
           <div className="hero-text1">
@@ -65,7 +69,7 @@ const Hero = () => {
       </div>
       
     </div>
-            </>
+            </div>
   );
 };
 

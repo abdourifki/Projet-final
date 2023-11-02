@@ -45,7 +45,7 @@
     background-color: chartreuse;
   }
   .blur{
-    background:rgb(9, 13, 64);
+    background:rgb(39, 39, 42);
     position: absolute;
     border-radius: 50%;
     filter: blur(150px);

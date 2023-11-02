@@ -48,8 +48,11 @@
 }
 .email-container>input::placeholder{
     color: black;
+    background-color: transparent;
 }
-
+.email-container>input:focus{
+    background-color: transparent;
+}
 
 .btn-j{
     padding: 10px 20px;
@@ -63,6 +66,5 @@
 .btn-j:active {
     box-shadow: 0 4px 8px rgba(98, 255, 0, 0.7);
   }
- 
-  
+
   

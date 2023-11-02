@@ -7,9 +7,9 @@
   
 
 .hero{
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
-    margin-top: -40px;
     background-image: url('../../assets/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +48,7 @@
     font-weight: bold;
     color: white;
     text-overflow: inherit;
+    padding-top: 60px;
 }
 .hero-text>div:nth-of-type(3){
     font-size: 1rem;

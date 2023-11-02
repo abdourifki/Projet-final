@@ -4,8 +4,6 @@ import emailjs from 'emailjs-com'; // Corrected import statement
 
 const Join = () => {
 
-  const alertSub = () => alert('Thank you for joining us !')
-
   const form = useRef()
 
   const sendEmail = (e) => {
@@ -18,6 +16,9 @@ const Join = () => {
           console.log(error.text);
       });
   };
+
+  const alertSub = () => alert('Thank you for joining us !');
+  form.current.reset();
 
   return (
     <div className="join" id="join-us">

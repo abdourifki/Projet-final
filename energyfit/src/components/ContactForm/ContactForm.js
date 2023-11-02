@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import { useState } from "react";
 import "./ContactForm.css";
+
 function ContactForm() {
   const [formData, setFormData] = useState({
     Prenom: "",
@@ -10,7 +10,7 @@ function ContactForm() {
     Message: "",
   });
 
-  const [messageSent, setMessageSent] = useState(false)
+  const [messageSent, setMessageSent] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,26 +20,25 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3001/api/contact", formData);
-      // alert("Contact form submitted successfully");
+      await axios.post("http://localhost:3007/api/contact", formData);
       setFormData({
         Prenom: "",
         Nom: "",
         Email: "",
         Message: "",
       });
+      setMessageSent(true);
     } catch (error) {
       console.error("Error:", error);
       // alert("Error submitting contact form");
     }
-    setMessageSent(true);
   };
 
   return (
     <div className="ContactForm-container">
-       <div className="text-form">
+      <div className="text-form">
         <h2>Follow Us</h2>
-        </div>
+      </div>
       <div className="form-container">
         <form onSubmit={handleSubmit}>
           <input
@@ -77,22 +76,20 @@ function ContactForm() {
             className="form-input"
             required
           />
-            <button type="submit" className="submit-button">
-              Envoyer
-            </button>
-            {messageSent ?
-              (<p className="messageSent">Message Sent Succefully !</p>) : (
-                <p></p>
-              )
-            }
-
+          <button type="submit" className="submit-button">
+            Envoyer
+          </button>
+          {messageSent ? (
+            <p className="messageSent">Message Sent Successfully !</p>
+          ) : (
+            <p></p>
+          )}
         </form>
-      </div> 
+      </div>
       <div className="d1">
-      <hr/>
+        <hr />
       </div>
-      </div>
-  
+    </div>
   );
 }
 

@@ -10,17 +10,27 @@ import nike from "../../src/assets/nike.png";
 import tick from "../../src/assets/tick.png";
 import HomeNavbar from '../components/Navbar/Homenavbar';
 import Footer from "../components/Footer/Footer";
+import aos from 'aos';
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 const Reasons = () => {
+  useEffect(()=>{
+    aos.init({duration:1000,
+      once: true,
+      easing:"ease-in-out",
+      offset:100,
+    })
+  },[]);
   return (
     <div className="container">
     <HomeNavbar/>
     <div className="reasons" id="reasons">
-      <div className="left-r">
-        <img src={image1} alt="" />
-        <img src={image2} alt="" />
-        <img src={image3} alt="" />
-        <img src={image4} alt="" />
+      <div className="left-r" >
+        <img src={image1} alt="" data-aos="fade-right"/>
+        <img src={image2} alt="" data-aos="fade-down-left"/>
+        <img src={image3} alt="" data-aos="fade-down"/>
+        <img src={image4} alt="" data-aos="fade-up-left"/>
       </div>
       <div className="right-r">
         <span>Some Reasons</span>
